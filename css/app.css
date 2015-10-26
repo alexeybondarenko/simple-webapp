@@ -1,0 +1,14 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alexeybondarenko\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000031}}
+body {
+  font: 200 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #313949; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alexeybondarenko\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000034}}
+.welcome {
+  padding: 10px 20px 20px;
+  background: white;
+  max-width: 600px;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alexeybondarenko\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000310}}
+  .welcome h1 {
+    text-align: center; }
