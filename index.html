@@ -6,16 +6,31 @@
     <title><%= appname %></title>
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
-    <div class="welcome">
-      <h1>Hello, <%= appname %></h1>
-      <p>We've created generator to speed up project starting process.</p>
-      <p>Generator configured project for using:</p>
-      <ul>
-        <li>gulp</li>
-        <li>sass/scss + compass</li>
-      </ul>
-      <p>We've also added<code>.editorconfig</code> and<code>.jshintrc</code> to simplify your team collaboration.</p>
+  <body class="container">
+    <div class="row row-centered">
+      <div class="welcome col-md-6 col-centered">
+        <h1>Hello, <%= appname %></h1>
+        <p>We've created generator to speed up project starting process.</p>
+        <p>Generator configured project for using:</p>
+        <ul>
+          <li>gulp</li>
+          <li>sass/scss + compass</li>
+        </ul>
+        <p>We've also added<code>.editorconfig</code> and<code>.jshintrc</code> to simplify your team collaboration.</p>
+        <ul>
+          <li>SASS. Boostrap 3 Grid, Akella's Lib (See Github)</li>
+          <li>Gulp. Deploy Gh-pages, Build</li>
+          <li>Images. Sprites generators via Compass</li>
+        </ul>
+        <h2>Requirements</h2>
+        <ul>
+          <li>Compass</li>
+          <li>NPM</li>
+          <li>Bower</li>
+        </ul>
+        <p>I've also included configurations for JSHint, but it had been configured.</p>
+        <p><i class="icon icon-logo"></i></p>
+      </div>
     </div>
     <script src="js/app.js"></script>
   </body>

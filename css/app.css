@@ -1,14 +1,1043 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alexeybondarenko\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\000031}}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000315}}
+body, html {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000318}}
+img, fieldset, a img {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000321}}
+input[type="submit"],
+button {
+  cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000324}}
+  input[type="submit"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000328}}
+textarea, input {
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000331}}
+textarea {
+  overflow: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000334}}
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000339}}
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000343}}
+ul, ol {
+  list-style-type: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000350}}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/lib\/_reset\.sass}line{font-family:\0000355}}
+a {
+  text-decoration: none;
+  color: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\0000324}}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\000036}}
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\0000324}}
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\0000324}}
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\0000324}}
+    .container {
+      width: 1170px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\0000344}}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\000036}}
+  .container-fluid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\0000353}}
+.row {
+  margin-left: -10px;
+  margin-right: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\000036}}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000311}}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000332}}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-1 {
+  width: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-2 {
+  width: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-3 {
+  width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-4 {
+  width: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-5 {
+  width: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-6 {
+  width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-7 {
+  width: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-8 {
+  width: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-9 {
+  width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-10 {
+  width: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-11 {
+  width: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+.col-xs-12 {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000360}}
+.col-xs-pull-0 {
+  right: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-1 {
+  right: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-2 {
+  right: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-3 {
+  right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-4 {
+  right: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-5 {
+  right: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-6 {
+  right: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-7 {
+  right: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-8 {
+  right: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-9 {
+  right: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-10 {
+  right: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-11 {
+  right: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+.col-xs-pull-12 {
+  right: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000350}}
+.col-xs-push-0 {
+  left: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-1 {
+  left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-2 {
+  left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-3 {
+  left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-4 {
+  left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-5 {
+  left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-6 {
+  left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-7 {
+  left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-8 {
+  left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-9 {
+  left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-10 {
+  left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-11 {
+  left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+.col-xs-push-12 {
+  left: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-0 {
+  margin-left: 0%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-1 {
+  margin-left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-2 {
+  margin-left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-4 {
+  margin-left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-5 {
+  margin-left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-7 {
+  margin-left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-8 {
+  margin-left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-10 {
+  margin-left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-11 {
+  margin-left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000332}}
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-1 {
+    width: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-2 {
+    width: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-3 {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-4 {
+    width: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-5 {
+    width: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-6 {
+    width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-7 {
+    width: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-8 {
+    width: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-9 {
+    width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-10 {
+    width: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-11 {
+    width: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-sm-12 {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000360}}
+  .col-sm-pull-0 {
+    right: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-1 {
+    right: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-2 {
+    right: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-3 {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-4 {
+    right: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-5 {
+    right: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-6 {
+    right: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-7 {
+    right: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-8 {
+    right: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-9 {
+    right: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-10 {
+    right: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-11 {
+    right: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-sm-pull-12 {
+    right: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000350}}
+  .col-sm-push-0 {
+    left: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-1 {
+    left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-2 {
+    left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-3 {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-4 {
+    left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-5 {
+    left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-6 {
+    left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-7 {
+    left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-8 {
+    left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-9 {
+    left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-10 {
+    left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-11 {
+    left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-sm-push-12 {
+    left: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-0 {
+    margin-left: 0%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-1 {
+    margin-left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-2 {
+    margin-left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-4 {
+    margin-left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-5 {
+    margin-left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-7 {
+    margin-left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-8 {
+    margin-left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-10 {
+    margin-left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-11 {
+    margin-left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-sm-offset-12 {
+    margin-left: 100%; } }
+@media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000332}}
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-1 {
+    width: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-2 {
+    width: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-3 {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-4 {
+    width: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-5 {
+    width: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-6 {
+    width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-7 {
+    width: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-8 {
+    width: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-9 {
+    width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-10 {
+    width: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-11 {
+    width: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-md-12 {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000360}}
+  .col-md-pull-0 {
+    right: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-1 {
+    right: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-2 {
+    right: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-3 {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-4 {
+    right: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-5 {
+    right: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-6 {
+    right: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-7 {
+    right: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-8 {
+    right: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-9 {
+    right: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-10 {
+    right: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-11 {
+    right: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-md-pull-12 {
+    right: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000350}}
+  .col-md-push-0 {
+    left: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-1 {
+    left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-2 {
+    left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-3 {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-4 {
+    left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-5 {
+    left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-6 {
+    left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-7 {
+    left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-8 {
+    left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-9 {
+    left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-10 {
+    left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-11 {
+    left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-md-push-12 {
+    left: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-0 {
+    margin-left: 0%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-1 {
+    margin-left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-2 {
+    margin-left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-3 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-4 {
+    margin-left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-5 {
+    margin-left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-6 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-7 {
+    margin-left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-8 {
+    margin-left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-9 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-10 {
+    margin-left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-11 {
+    margin-left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-md-offset-12 {
+    margin-left: 100%; } }
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000332}}
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-1 {
+    width: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-2 {
+    width: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-3 {
+    width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-4 {
+    width: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-5 {
+    width: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-6 {
+    width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-7 {
+    width: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-8 {
+    width: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-9 {
+    width: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-10 {
+    width: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-11 {
+    width: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000340}}
+  .col-lg-12 {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000360}}
+  .col-lg-pull-0 {
+    right: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-1 {
+    right: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-2 {
+    right: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-3 {
+    right: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-4 {
+    right: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-5 {
+    right: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-6 {
+    right: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-7 {
+    right: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-8 {
+    right: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-9 {
+    right: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-10 {
+    right: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-11 {
+    right: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000355}}
+  .col-lg-pull-12 {
+    right: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000350}}
+  .col-lg-push-0 {
+    left: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-1 {
+    left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-2 {
+    left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-3 {
+    left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-4 {
+    left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-5 {
+    left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-6 {
+    left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-7 {
+    left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-8 {
+    left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-9 {
+    left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-10 {
+    left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-11 {
+    left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000345}}
+  .col-lg-push-12 {
+    left: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-0 {
+    margin-left: 0%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-1 {
+    margin-left: 8.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-2 {
+    margin-left: 16.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-4 {
+    margin-left: 33.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-5 {
+    margin-left: 41.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-7 {
+    margin-left: 58.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-8 {
+    margin-left: 66.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-10 {
+    margin-left: 83.33333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-11 {
+    margin-left: 91.66667%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid-framework\.scss}line{font-family:\0000365}}
+  .col-lg-offset-12 {
+    margin-left: 100%; } }
+/* centered columns styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\00003101}}
+.row-centered {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\00003104}}
+.col-centered {
+  display: inline-block;
+  float: none !important;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\00003112}}
+.col-fixed {
+  /* custom width */
+  width: 320px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\00003116}}
+.col-min {
+  /* custom min width */
+  min-width: 320px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/grid\/_grid\.scss}line{font-family:\00003120}}
+.col-max {
+  /* custom max width */
+  max-width: 320px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000035}}
+.pull-right {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000037}}
+.pull-left {
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000039}}
+.vertical-align {
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000311}}
+.center {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000313}}
+.uppercase {
+  text-transform: uppercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000317}}
+.border-between > [class*='col-']:nth-child(2n) {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0 0 0 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000322}}
+a {
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000325}}
 body {
   font: 200 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #313949; }
+  background: #313949;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alexeybondarenko\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000332}}
 .welcome {
   padding: 10px 20px 20px;
-  background: white;
-  max-width: 600px;
-  margin: 0 auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/alexeybondarenko\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000310}}
+  background: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000336}}
+  .welcome p, .welcome ol, .welcome ul, .welcome h1, .welcome h2, .welcome h3, .welcome h4, .welcome h5 {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000339}}
   .welcome h1 {
     text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/app\.sass}line{font-family:\0000341}}
+  .welcome ul, .welcome ol li {
+    list-style: inherit;
+    margin-left: inherit;
+    padding-left: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/_icon\.sass}line{font-family:\000031}}
+.icon {
+  display: inline-block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/nebo15\/Sites\/simple-webapp\/src\/css\/_icon\.sass}line{font-family:\000035}}
+.icon-logo {
+  background: url('../images/icons-s90695f3149.png') 0 0 no-repeat;
+  width: 100px;
+  height: 50px; }
