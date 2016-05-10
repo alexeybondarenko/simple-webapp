@@ -169,7 +169,7 @@ gulp.task('config', ['copy-scripts'],function () {
 var l10nOpts = {
   elements: [],
   native: 'origin.tmp',
-  base: 'ro',
+  base: 'en',
   enforce: params.production ? 'strict' : 'warn'
 };
 
