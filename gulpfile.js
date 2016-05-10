@@ -1,7 +1,9 @@
+require('dotenv').config(); // .env file
+
 var gulp = require('gulp'),
+  nconf = require('nconf'),
   sequence = require('gulp-sequence'),
   path = require('path'),
-  argv = require('yargs').argv,
   prefix = require('gulp-prefix'),
   clean = require('gulp-clean'),
   browserSync = require('browser-sync'),
@@ -14,41 +16,44 @@ var gulp = require('gulp'),
   gulpif = require('gulp-if'),
   replace = require('gulp-replace'),
   rename = require('gulp-rename'),
-  l10n = require('gulp-l10n');
-
+  ngAnnotate = require('gulp-ng-annotate'),
+  l10n = require('gulp-l10n'),
   useref = require('gulp-useref'),
   uglify = require('gulp-uglify'),
   htmlmin = require('gulp-htmlmin'),
   minifyCss = require('gulp-minify-css'),
-  imagemin = require('gulp-imagemin'),
-  pngquant = require('imagemin-pngquant'),
   _ = require('lodash'),
-  ngConstant = require('gulp-ng-constant')
-  gutil = require('gulp-util'),
-  stream = require('stream');
+  ngConstant = require('gulp-ng-constant');
 
+nconf.argv()
+      .env();
 
+var params = {
+  env: nconf.get('env'),
+  production: ('' + nconf.get('production')) == 'true'
+};
+
+if (!params.env) {
+  params.env = params.production ? 'production' : 'dev'
+}
 
 var src = {
-  jade: ['src/jade/*.jade','src/jade/templates/*.jade'],
-  html: ['www/*.html','www/templates/*.html']
+  jade: ['src/jade/*.jade', 'src/jade/templates/*.jade'],
+  html: ['www/*.html', 'www/templates/*.html']
 };
 
 //the title and icon that will be used for the Grunt notifications
 var notifyInfo = {
-  title: 'Gulp',
-  //icon: path.join(__dirname, 'gulp.png')
+  title: 'Gulp'
 };
 
 //error notification settings for plumber
 var plumberErrorHandler = {
   errorHandler: notify.onError({
     title: notifyInfo.title,
-    //icon: notifyInfo.icon,
     message: "Error: <%= error.message %>"
   })
 };
-
 
 // Web Server
 gulp.task('server', function () {
@@ -86,9 +91,9 @@ gulp.task('build-styles', function () {
       css: 'www/css',
       sass: 'src/sass',
       image: 'src/images',
-      debug: !argv.production,
+      debug: !params.production,
       relative: true,
-      style: argv.production ? 'compressed' : 'nested'
+      style: params.production ? 'compressed' : 'nested'
     }))
     .pipe(autoprefixer({
       browsers: ['last 4 versions', 'ie 8'],
@@ -113,6 +118,7 @@ gulp.task('copy-statics', function () {
 // Scripts
 gulp.task('copy-scripts', function () {
   return gulp.src(['./src/js/**/*'], {base: './src'})
+    .pipe(ngAnnotate())
     .pipe(gulp.dest('./www'));
 });
 
@@ -128,7 +134,6 @@ gulp.task('copy-fonts', function () {
     .pipe(gulp.dest('./www'));
 });
 
-
 // Jade to HTML
 gulp.task('build-jade', function () {
   return gulp.src(src.jade, {base: './src/jade'})
@@ -138,53 +143,39 @@ gulp.task('build-jade', function () {
 });
 
 
-function string_src (filename, string) {
-  var src = stream.Readable({ objectMode: true });
-  src._read = function () {
-    this.push(new gutil.File({ cwd: "", base: "", path: filename, contents: new Buffer(string) }));
-    this.push(null)
-  };
-  return src
-}
-
 gulp.task('config', ['copy-scripts'],function () {
   var configObj = require('./settings/config');
+
   var defaultConfig = configObj['default'];
+  var targetConfig = configObj[params.env];
 
-  var envName = argv.production ? 'production' : 'dev';
-  var targetConfig = configObj[envName];
+  var resultConfig = _.assign({}, defaultConfig, targetConfig);
 
-  var resultConfig = _.defaultsDeep({}, defaultConfig, targetConfig);
+  console.log(resultConfig);
 
-  return string_src('config.js', 'window.env = ' + JSON.stringify(resultConfig, null, 2) + ';')
+  return ngConstant({
+      name: 'config',
+      constants: {
+        'ENV': resultConfig
+      },
+      stream: true
+    }).pipe(rename(function (path) {
+      path.basename = 'config';
+    }))
     // Writes config.js to dist/ folder
     .pipe(gulp.dest('www/js'));
-});
-
-
-gulp.task('minimize', function (cb) {
-  //if (!argv.production) {
-  //  return cb();
-  //}
-
-  return gulp.src(['www/*.html', 'www/templates/*.html'], {base: 'www'})
-    .pipe(useref())
-    //.pipe(gulpif('*.css', minifyCss()))
-    //.pipe(gulpif('*.js', uglify()))
-    //.pipe(gulpif('*.html', htmlmin({collapseWhitespace: true, removeComments: true})))
-    .pipe(gulp.dest('www'));
 });
 
 var l10nOpts = {
   elements: [],
   native: 'origin.tmp',
-  base: 'en',
-  enforce: argv.production ? 'strict' : 'warn'
+  base: 'ro',
+  enforce: params.production ? 'strict' : 'warn'
 };
 
 
-gulp.task('extract-locales', ['build-jade','copy-statics'], function () {
-  return gulp.src('www/**/*.html')
+gulp.task('extract-locales', ['build-jade', 'copy-statics'], function () {
+  return gulp.src(['www/**/*.html', '!www/bower_components/**/*'])
     .pipe(l10n.extract({
       elements: l10nOpts.elements,
       native: l10nOpts.native
@@ -202,15 +193,31 @@ gulp.task('load-locales', function () {
 
 // Files piped to the plugin are localized and cloned to a separate subdirectory
 // for each locale. e.g.: 'index.html' > 'de/index.html'
-
-gulp.task('localize', ['build-jade', 'copy-statics', 'load-locales'], function () {
-  return gulp.src('www/{./,templates}/*.html')
+function localize () {
+  var stream = gulp.src('www/{./,templates}/*.html')
     .pipe(l10n())
-    //.pipe(replace(/s18n(-attrs)?(=[\"\'][^\'^\"]*[\"\'])?/g, ''))
-    //.pipe(gulpif('**/'+l10nOpts.base+'/**/**.*', rename(function (path) {
-    //  path.dirname = path.dirname.replace(l10nOpts.base + '/', '').replace(l10nOpts.base, '');
-    //})))
-    .pipe(gulp.dest('www'))
+    .pipe(replace(/s18n[\w\-]*((=)?([\"\'][^\'^\"]*[\"\'])?)?/g, ''));
+
+  stream.pipe(gulpif('**/' + l10nOpts.base + '/**/**.*', rename(function (path) {
+    path.dirname = path.dirname.replace(l10nOpts.base + '/', '').replace(l10nOpts.base, '');
+  })));
+
+  stream.pipe(gulp.dest('www'))
+}
+gulp.task('localize', ['build-jade', 'copy-statics', 'load-locales'], localize);
+gulp.task('localize-build', ['load-locales'], localize);
+
+gulp.task('minimize', function (cb) {
+  if (!params.production) {
+    return cb();
+  }
+
+  return gulp.src(['www/*.html', 'www/templates/*.html'], {base: 'www'})
+    .pipe(useref())
+    .pipe(gulpif('*.css', minifyCss()))
+    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulpif('*.html', htmlmin({collapseWhitespace: true, removeComments: true})))
+    .pipe(gulp.dest('www'));
 });
 
 // Watch for for changes
@@ -240,12 +247,21 @@ gulp.task('deploy', ['deploy-prefix'], function () {
 });
 
 // Base tasks
-gulp.task('default', sequence('build', ['server', 'watch']));
-gulp.task('build', function (cb) {
-  sequence('clean', ['copy-bower', 'copy-fonts', 'copy-images', 'copy-statics', 'copy-scripts', 'config', 'build-styles', 'build-jade'], 'extract-locales', 'localize', 'minimize')(cb);
-});
-gulp.task('production', function (cb) {
-  argv.production = true;
-  sequence('build', cb);
-});
+gulp.task('build-www', [
+  'copy-bower',
+  'copy-fonts',
+  'copy-images',
+  'copy-statics',
+  'config',
+  'copy-scripts',
+  'build-styles',
+  'build-jade',
+  'extract-locales'
+]);
 
+gulp.task('build', function (cb) {
+  sequence('clean', 'build-www', 'minimize', 'localize-build')(cb);
+});
+gulp.task('default', function (cb) {
+  sequence('build',['server','watch'])(cb);
+});
