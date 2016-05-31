@@ -22,7 +22,7 @@ cd projectName
 rm -rf !$/.git
 ```
 
-Update `gulpfile.js`. Change prefix in deploy-prefix task to the `repositoryName`.
+Update `gulpfile.js`. Change prefix in **deploy-prefix** task to the `repositoryName`.
 
 ## Tasks
 
